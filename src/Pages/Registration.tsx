@@ -23,8 +23,8 @@ const Registration = () => {
   };
   return (
     <div className="w-full h-screen bg-slate-400 flex flex-row justify-center items-center">
-      <form action="" className="bg-white h-4/5 w-1/2 rounded flex flex-row">
-        <div className="bg-blue-800 w-80 h-full overflow-hidden">
+      <form action="" className="bg-white p-5 w-1/2 rounded flex flex-row">
+        <div className="bg-blue-800 w-80 h-full overflow-hidden rounded">
           <img
             src={image1}
             alt="Image"
@@ -32,7 +32,7 @@ const Registration = () => {
           />
         </div>
 
-        <div className="flex flex-col gap-5 mt-5 px-10 w-1/2">
+        <div className="flex flex-col gap-4 mt-5 px-10 w-1/2">
           <h1 className="text-2xl font-bold">Registration</h1>
           {/* Images */}
           <div
@@ -83,7 +83,7 @@ const Registration = () => {
               Password
             </label>
             <input
-              type="text"
+              type="email"
               className="bg-transparent text-[12px] outline-none border-[1px] border-gray-500/20 focus:border-2 focus:border-gray-500/40 p-1 pl-3 rounded"
               placeholder="Please Enter Your First Name"
             />
@@ -102,6 +102,10 @@ const Registration = () => {
           <button className="w-full p-2 bg-blue-700 text-white rounded hover:bg-blue-600">
             Register
           </button>
+          <div className='flex flex-row justify-between items-center'>
+            <a href='/registration' className="text-[12px] font-semibold">Don't have account? <span className="text-blue-600 underline cursor-pointer hover:text-blue-400">Click here</span></a>
+            <a href="/" className='text-red-600 hover:text-red-400 text-[12px] font-semibold underline'>Back Home</a>
+          </div>
         </div>
       </form>
     </div>
